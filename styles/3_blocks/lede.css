@@ -2,19 +2,13 @@
 /* from https://piccalil.li/blog/some-simple-ways-to-make-content-look-good/ */
 
 .b_lede {
+  color: var(--color-secondary);
   font-size: var(--step-2);
   font-style: italic;
   max-width: 45ch;
   text-wrap: wrap;
-  color: var(--color-secondary);
 }
 
 .b_lede+* {
-  --l_flow-space: 2em;
-}
-
-@media print {
-  .b_lede+* {
-    --l_flow-space: 1.25em;
-  }
+  --l_flow__space: 2em;
 }

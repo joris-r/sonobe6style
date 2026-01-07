@@ -2,10 +2,6 @@
 /* https://bell.bz/my-favourite-3-lines-of-css/ */
 /* https://every-layout.dev/layouts/stack/ */
 
-.l_flow>* {
-    margin-block: 0;
-}
-
 .l_flow>*+* {
     margin-block-start: var(--l_flow__space, 1em);
 }

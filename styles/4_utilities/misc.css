@@ -1,11 +1,11 @@
 
 /* ---- CSS Utilities ---- */
 
-.u_ta-center {
+.u_text-align-center {
     text-align: center;
 }
 
-.u_ta-right {
+.u_text-align-right {
     text-align: right;
 }
 
@@ -28,8 +28,4 @@
 
 .u_empty_list-style {
     list-style-type: '';
-}
-
-.u_text-align-center{
-    text-align: center
 }
