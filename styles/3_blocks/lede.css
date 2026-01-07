@@ -1,0 +1,20 @@
+/* intro paragraph */
+/* from https://piccalil.li/blog/some-simple-ways-to-make-content-look-good/ */
+
+.b_lede {
+  font-size: var(--step-2);
+  font-style: italic;
+  max-width: 45ch;
+  text-wrap: wrap;
+  color: var(--color-secondary);
+}
+
+.b_lede+* {
+  --l_flow-space: 2em;
+}
+
+@media print {
+  .b_lede+* {
+    --l_flow-space: 1.25em;
+  }
+}
