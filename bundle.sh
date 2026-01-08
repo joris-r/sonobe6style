@@ -1,3 +1,11 @@
 #!/usr/bin/env bash
 
-find styles/ -type f -name "*.css" -exec cat {} + > styles.css
+# CSS bundle from files *.css in directory styles/
+
+find styles/ -type f -name "*.css" | sort | while read file; do
+    echo
+    echo
+    echo "/* Source File: ${file} */"
+    echo
+    cat "${file}"
+done > styles.css
